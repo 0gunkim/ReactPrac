@@ -4,6 +4,36 @@ import { useNavigate, useParams } from "react-router-dom";
 import { getTodoByID } from "../redux/modules/todos";
 import styled from "styled-components";
 
+const ConSt = styled.div`
+  
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const InBt = styled.div`
+  width: 600px;
+  height: 400px;
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+const Btn = styled.button`
+margin: 10px auto;
+`
+
+const TSt = styled.h1`
+  padding: 0 24px;
+`;
+
+const BSt = styled.main`
+  padding: 0 24px;
+`;
+
+
 
 const Detail = () => {
   const dispatch = useDispatch();
@@ -39,34 +69,4 @@ const Detail = () => {
 };
 
 export default Detail;
-
-const ConSt = styled.div`
- 
-  
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const InBt = styled.div`
-  width: 600px;
-  height: 400px;
-  border: 1px solid #000000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-const Btn = styled.button`
-margin: 10px auto;
-`
-
-const TSt = styled.h1`
-  padding: 0 24px;
-`;
-
-const BSt = styled.main`
-  padding: 0 24px;
-`;
 
